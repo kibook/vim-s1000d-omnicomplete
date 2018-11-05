@@ -60,7 +60,7 @@
       </xsl:if>
     </xsl:for-each>
     <xsl:text>], {</xsl:text>
-    <xsl:for-each select="xsd:attribute|xsd:attributeGroup">
+    <xsl:for-each select="xsd:attribute|xsd:attributeGroup|xsd:simpleContent//xsd:attribute">
       <xsl:choose>
         <xsl:when test="self::xsd:attributeGroup">
           <xsl:apply-templates select="."/>

@@ -19,6 +19,6 @@ do
 			S1000D_42) urliss="S1000D_4-2" ;;
 		esac
 
-		echo "au BufRead *.[Xx][Mm][Ll] if search('xmlNoNamespaceSchemaLocation=\"http://www.s1000d.org/${urliss}/xml_schema_flat/${base}\"','n') | call xmlcomplete#CreateConnection('${ns}') | endif" >> vim/ftdetect/S1000D.vim
+		echo "au BufRead *.[Xx][Mm][Ll] if search('noNamespaceSchemaLocation=\"http://www.s1000d.org/${urliss}/xml_schema_flat/${base}\"','n') | call xmlcomplete#CreateConnection('${ns}') | endif" >> vim/ftdetect/S1000D.vim
 	done
 done
