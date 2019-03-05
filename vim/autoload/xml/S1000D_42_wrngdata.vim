@@ -1,4 +1,4 @@
-let g:xmldata_S1000D_42_wrngdata= {
+let g:xmldata_S1000D_42_wrngdata = {
 \ 'dmodule': [['rdf:Description', 'identAndStatusSection', 'content'], {'id': []}],
 \ 'identAndStatusSection': [['dmAddress', 'dmStatus'], {}],
 \ 'dmAddress': [['dmIdent', 'dmAddressItems'], {}],

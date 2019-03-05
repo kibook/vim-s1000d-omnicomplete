@@ -1,4 +1,4 @@
-let g:xmldata_S1000D_41_process= {
+let g:xmldata_S1000D_41_process = {
 \ 'dmodule': [['rdf:Description', 'identAndStatusSection', 'content'], {'id': []}],
 \ 'identAndStatusSection': [['dmAddress', 'dmStatus'], {}],
 \ 'dmAddress': [['dmIdent', 'dmAddressItems'], {}],

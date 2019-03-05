@@ -1,4 +1,4 @@
-let g:xmldata_S1000D_42_ddn= {
+let g:xmldata_S1000D_42_ddn = {
 \ 'ddn': [['rdf:Description', 'identAndStatusSection', 'ddnContent'], {'id': []}],
 \ 'identAndStatusSection': [['ddnAddress', 'ddnStatus'], {}],
 \ 'ddnAddress': [['ddnIdent', 'ddnAddressItems'], {}],

@@ -11,7 +11,7 @@
   <xsl:template match="/">
     <xsl:text>let g:xmldata_</xsl:text>
     <xsl:value-of select="$namespace"/>
-    <xsl:text>= {</xsl:text>
+    <xsl:text> = {</xsl:text>
     <xsl:text>&#10;</xsl:text>
     <xsl:text>\ </xsl:text>
     <xsl:for-each select="//xsd:element[@name]">
@@ -83,7 +83,7 @@
     <xsl:choose>
       <xsl:when test="@ref">
         <xsl:variable name="ref" select="@ref"/>
-        <xsl:apply-templates select="//xsd:attribute[@name = $ref]"/>
+        <xsl:apply-templates select="/xsd:schema/xsd:attribute[@name = $ref]"/>
       </xsl:when>
       <xsl:otherwise>
         <xsl:variable name="type" select="@type"/>
@@ -151,7 +151,7 @@
               <xsl:text>'</xsl:text>
               <xsl:value-of select="@ref"/>
               <xsl:text>': </xsl:text>
-              <xsl:apply-templates select="//xsd:attribute[@name = $ref]"/>
+              <xsl:apply-templates select="/xsd:schema/xsd:attribute[@name = $ref]"/>
             </xsl:when>
             <xsl:otherwise>
               <xsl:variable name="type" select="@type"/>

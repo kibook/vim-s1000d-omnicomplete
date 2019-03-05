@@ -1,4 +1,4 @@
-let g:xmldata_S1000D_42_icnmetadata= {
+let g:xmldata_S1000D_42_icnmetadata = {
 \ 'icnMetadataFile': [['rdf:Description', 'imfIdentAndStatusSection', 'imfContent'], {'id': []}],
 \ 'imfIdentAndStatusSection': [['imfAddress', 'imfStatus'], {}],
 \ 'imfAddress': [['imfIdent', 'imfAddressItems'], {}],

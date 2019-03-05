@@ -1,4 +1,4 @@
-let g:xmldata_S1000D_41_dml= {
+let g:xmldata_S1000D_41_dml = {
 \ 'dml': [['rdf:Description', 'identAndStatusSection', 'dmlContent'], {'id': [], 'listDirection': ['send', 'reply']}],
 \ 'identAndStatusSection': [['dmlAddress', 'dmlStatus'], {}],
 \ 'dmlAddress': [['dmlIdent', 'dmlAddressItems'], {}],

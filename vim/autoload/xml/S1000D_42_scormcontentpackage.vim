@@ -1,4 +1,4 @@
-let g:xmldata_S1000D_42_scormcontentpackage= {
+let g:xmldata_S1000D_42_scormcontentpackage = {
 \ 'scormContentPackage': [['rdf:Description', 'identAndStatusSection', 'content'], {'id': []}],
 \ 'identAndStatusSection': [['scormContentPackageAddress', 'scormContentPackageStatus', 'lom:lom'], {}],
 \ 'scormContentPackageAddress': [['scormContentPackageIdent', 'scormContentPackageAddressItems'], {}],

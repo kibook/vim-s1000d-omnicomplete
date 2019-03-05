@@ -1,4 +1,4 @@
-let g:xmldata_S1000D_41_pm= {
+let g:xmldata_S1000D_41_pm = {
 \ 'pm': [['rdf:Description', 'identAndStatusSection', 'content'], {'id': []}],
 \ 'identAndStatusSection': [['pmAddress', 'pmStatus'], {}],
 \ 'pmAddress': [['pmIdent', 'pmAddressItems'], {}],

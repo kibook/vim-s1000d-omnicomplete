@@ -1,4 +1,4 @@
-let g:xmldata_S1000D_42_prdcrossreftable= {
+let g:xmldata_S1000D_42_prdcrossreftable = {
 \ 'dmodule': [['rdf:Description', 'identAndStatusSection', 'content'], {'id': []}],
 \ 'identAndStatusSection': [['dmAddress', 'dmStatus'], {}],
 \ 'dmAddress': [['dmIdent', 'dmAddressItems'], {}],

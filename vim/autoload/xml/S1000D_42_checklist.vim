@@ -1,4 +1,4 @@
-let g:xmldata_S1000D_42_checklist= {
+let g:xmldata_S1000D_42_checklist = {
 \ 'dmodule': [['rdf:Description', 'identAndStatusSection', 'content'], {'id': []}],
 \ 'identAndStatusSection': [['dmAddress', 'dmStatus'], {}],
 \ 'dmAddress': [['dmIdent', 'dmAddressItems'], {}],

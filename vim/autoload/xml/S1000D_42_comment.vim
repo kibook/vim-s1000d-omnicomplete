@@ -1,4 +1,4 @@
-let g:xmldata_S1000D_42_comment= {
+let g:xmldata_S1000D_42_comment = {
 \ 'comment': [['rdf:Description', 'identAndStatusSection', 'commentContent'], {'id': []}],
 \ 'identAndStatusSection': [['commentAddress', 'commentStatus'], {}],
 \ 'commentAddress': [['commentIdent', 'commentAddressItems'], {}],

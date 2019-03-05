@@ -1,4 +1,4 @@
-let g:xmldata_S1000D_42_update= {
+let g:xmldata_S1000D_42_update = {
 \ 'dataUpdateFile': [['updateIdentAndStatusSection', 'content'], {}],
 \ 'updateIdentAndStatusSection': [['updateAddress', 'updateStatus', 'targetDmStatus'], {}],
 \ 'updateAddress': [['updateIdent', 'issueDate'], {}],

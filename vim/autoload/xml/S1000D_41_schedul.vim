@@ -1,4 +1,4 @@
-let g:xmldata_S1000D_41_schedul= {
+let g:xmldata_S1000D_41_schedul = {
 \ 'dmodule': [['rdf:Description', 'identAndStatusSection', 'content'], {'id': []}],
 \ 'identAndStatusSection': [['dmAddress', 'dmStatus'], {}],
 \ 'dmAddress': [['dmIdent', 'dmAddressItems'], {}],
