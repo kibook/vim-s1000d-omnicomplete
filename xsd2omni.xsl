@@ -14,7 +14,7 @@
     <xsl:text> = {</xsl:text>
     <xsl:text>&#10;</xsl:text>
     <xsl:text>\ </xsl:text>
-    <xsl:for-each select="//xsd:element[@name]">
+    <xsl:for-each select="//xsd:element[@name and not(contains(@name, ':'))]">
       <xsl:apply-templates select="."/>
       <xsl:if test="position() != last()">
         <xsl:text>,</xsl:text>
@@ -35,6 +35,9 @@
     <xsl:choose>
       <xsl:when test="$complexType">
         <xsl:apply-templates select="$complexType"/>
+      </xsl:when>
+      <xsl:when test="xsd:complexType">
+        <xsl:apply-templates select="xsd:complexType"/>
       </xsl:when>
       <xsl:otherwise>
         <xsl:text>[[], {}]</xsl:text>

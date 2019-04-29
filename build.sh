@@ -26,7 +26,7 @@ do
 
 	echo "Converting ${f} to ${out}..."
 
-	xsltproc -stringparam namespace "$ns" xsd2omni.xsl "$f" > "$out"
+	xsltproc xsdimport.xsl "$f" | xsltproc -stringparam namespace "$ns" xsd2omni.xsl - > "$out"
 
 	if $first
 	then
