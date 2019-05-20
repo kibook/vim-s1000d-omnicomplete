@@ -101,14 +101,29 @@
   </xsl:template>
 
   <xsl:template match="xsd:simpleType">
-    <xsl:for-each select=".//xsd:enumeration">
-      <xsl:text>'</xsl:text>
-      <xsl:value-of select="@value"/>
-      <xsl:text>'</xsl:text>
+    <xsl:for-each select=".//xsd:enumeration|.//xsd:pattern">
+      <xsl:apply-templates select="@value"/>
       <xsl:if test="position() != last()">
         <xsl:text>, </xsl:text>
       </xsl:if>
     </xsl:for-each>
+  </xsl:template>
+
+  <xsl:template match="xsd:enumeration/@value">
+    <xsl:text>'</xsl:text>
+    <xsl:value-of select="."/>
+    <xsl:text>'</xsl:text>
+  </xsl:template>
+
+  <xsl:template match="xsd:pattern/@value">
+    <xsl:choose>
+      <xsl:when test=". = '[01]'">'0','1'</xsl:when>
+      <xsl:otherwise>
+        <xsl:text>'</xsl:text>
+        <xsl:value-of select="."/>
+        <xsl:text>'</xsl:text>
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:template>
 
   <xsl:template match="xsd:group">
