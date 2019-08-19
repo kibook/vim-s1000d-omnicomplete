@@ -84,13 +84,18 @@
 
   <xsl:template match="xsd:attribute">
     <xsl:choose>
+      <xsl:when test="@fixed">
+        <xsl:text>['</xsl:text>
+        <xsl:value-of select="@fixed"/>
+        <xsl:text>']</xsl:text>
+      </xsl:when>
       <xsl:when test="@ref">
         <xsl:variable name="ref" select="@ref"/>
-        <xsl:apply-templates select="/xsd:schema/xsd:attribute[@name = $ref]"/>
+        <xsl:apply-templates select="/xsd:schema/xsd:attribute[@name = $ref][1]"/>
       </xsl:when>
       <xsl:otherwise>
         <xsl:variable name="type" select="@type"/>
-        <xsl:variable name="simpleType" select="//xsd:simpleType[@name = $type]"/>
+        <xsl:variable name="simpleType" select="//xsd:simpleType[@name = $type][1]"/>
         <xsl:text>[</xsl:text>
         <xsl:if test="$simpleType">
           <xsl:apply-templates select="$simpleType"/>
@@ -130,7 +135,7 @@
     <xsl:choose>
       <xsl:when test="@ref">
         <xsl:variable name="ref" select="@ref"/>
-        <xsl:apply-templates select="//xsd:group[@name = $ref]"/>
+        <xsl:apply-templates select="//xsd:group[@name = $ref][1]"/>
       </xsl:when>
       <xsl:otherwise>
         <xsl:for-each select=".//xsd:element|.//xsd:group">
@@ -156,7 +161,7 @@
     <xsl:choose>
       <xsl:when test="@ref">
         <xsl:variable name="ref" select="@ref"/>
-        <xsl:apply-templates select="//xsd:attributeGroup[@name = $ref]"/>
+        <xsl:apply-templates select="//xsd:attributeGroup[@name = $ref][1]"/>
       </xsl:when>
       <xsl:otherwise>
         <xsl:for-each select=".//xsd:attribute|.//xsd:attributeGroup">
@@ -169,11 +174,11 @@
               <xsl:text>'</xsl:text>
               <xsl:value-of select="@ref"/>
               <xsl:text>': </xsl:text>
-              <xsl:apply-templates select="/xsd:schema/xsd:attribute[@name = $ref]"/>
+              <xsl:apply-templates select="/xsd:schema/xsd:attribute[@name = $ref][1]"/>
             </xsl:when>
             <xsl:otherwise>
               <xsl:variable name="type" select="@type"/>
-              <xsl:variable name="simpleType" select="//xsd:simpleType[@name = $type]"/>
+              <xsl:variable name="simpleType" select="//xsd:simpleType[@name = $type][1]"/>
               <xsl:text>'</xsl:text>
               <xsl:value-of select="@name"/>
               <xsl:text>': </xsl:text>
