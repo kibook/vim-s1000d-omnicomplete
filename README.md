@@ -14,6 +14,7 @@ For example, after installation, your Vim directory would look like this:
 ```
 ...
 ~/.vim/autoload/xml/S1000D_[...]_[...].vim
+...
 ~/.vim/ftdetect/S1000D.vim
 ...
 ```
@@ -27,6 +28,11 @@ https://vim.fandom.com/wiki/Omni_completion. The default method of
 activating Omnicomplete is using ^X^O (Ctrl-X Ctrl-O) in Insert mode.
 
 # Building
+
+Requirements:
+
+- S1000D XML schemas
+- xsltproc (part of [libxml2](http://www.xmlsoft.org/))
 
 To rebuild the Omnicomplete dictionaries from the S1000D XML schemas:
 
