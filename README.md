@@ -7,7 +7,7 @@ automatically from the official S1000D XML schemas.
 # Installing
 
 This repository includes pre-built Omnicomplete dictionaries for S1000D
-Issue 2.3 thru 5.0. To install them, copy the contents of the `vim`
+Issue 2.3 thru 6. To install them, copy the contents of the `vim`
 directory to your Vim configuration directory (e.g., `~/.vim`).
 
 For example, after installation, your Vim directory would look like this:
