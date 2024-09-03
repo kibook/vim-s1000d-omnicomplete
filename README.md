@@ -51,4 +51,4 @@ To rebuild the Omnicomplete dictionaries from the S1000D XML schemas:
     schemas/S1000D_4-1/xml_schema_flat/descript.xsd
     schemas/S1000D_3-0/xml_schema_flat/fault.xsd
     ```
-3. Run `sh build.sh`
+3. Run `./build.sh`
