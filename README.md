@@ -47,7 +47,7 @@ To rebuild the Omnicomplete dictionaries from the S1000D XML schemas:
     For example:
 
     ```
-		schemas/S1000D_6/xml_schema_flat/comrep.xsd
+    schemas/S1000D_6/xml_schema_flat/comrep.xsd
     schemas/S1000D_5-0/xml_schema_flat/proced.xsd
     schemas/S1000D_4-1/xml_schema_flat/descript.xsd
     schemas/S1000D_3-0/xml_schema_flat/fault.xsd
